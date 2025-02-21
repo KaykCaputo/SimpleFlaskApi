@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grunge</title>
+  </head>
+  <body>
+    <h1>Grunge Artists</h1>
+    <ul id="artists_ul">
+      {% for a in artists %}
+      <li><a href="/albums/{{a['name']}}">{{a['name']}}</a></li>
+      {% endfor %}
+      <h5>Click on a artist to see their albums</h5>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+DATABASE_NAME = 'music.db'

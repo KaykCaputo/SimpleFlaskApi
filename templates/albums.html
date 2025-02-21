@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ albums[0]['artist'] }}</title>
+  </head>
+  <body>
+    <h1>{{ albums[0]['artist'] }}</h1>
+    <ul id="albums">
+      {% for a in albums %}
+      <li><a href="/albums/{{a['artist']}}/{{a['name']}}">{{a['name']}}</a></li>
+      {% endfor %}
+      <h5>Click on a album to see their songs</h5>
+      <p>Click <a href="/">here</a> to comeback to artists</p>
+    </ul>
+  </body>
+</html>
